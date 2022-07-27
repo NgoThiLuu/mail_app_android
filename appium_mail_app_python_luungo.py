@@ -169,8 +169,6 @@ def log_in_mail_app():
         ValidateFailResultAndSystem("=>=> Crash App")
         exit(0)
 
-    #time.sleep(1)
-
     try:
         username = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["txt_id"])))
         if  username.is_displayed():
@@ -183,7 +181,6 @@ def log_in_mail_app():
     except WebDriverException:
         ValidateFailResultAndSystem("=>=> Crash App")
         exit(0)
-    #time.sleep(1)
     try:
         password = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["txt_pw"])))
         if  password.is_displayed():
@@ -213,8 +210,6 @@ def log_in_mail_app():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
-    #time.sleep(1)
-
     if "Inbox" or "받은메일함" or "Hộp thứ đến" in driver.page_source :
         Logging("2. Log in successfully")
     else:
@@ -242,12 +237,9 @@ def log_in_mail_app():
         time.sleep(1)
         click_avatar_new = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["avatar_user"])))
         click_avatar_new.click()
-        #time.sleep(1)
         Logging("2. Click Avatar => Pass")
-        #time.sleep(1)
         click_langue_list = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["click_change_langue"])))
         click_langue_list.click()
-        #time.sleep(1)
 
         try:
             click_list_language = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_langue_eng"])))
@@ -261,13 +253,10 @@ def log_in_mail_app():
         except WebDriverException:
             ValidateFailResultAndSystem("=> Crash App")
             exit(0)
-        time.sleep(1)
+        
 
 def send_mail_app():
-    
-    
     Logging("------------------------------------------------------Send Mail------------------------------------------------------")
-
     try:
         click_btn_create_new = WebDriverWait(driver, 50).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_write_mail"])))
         if  click_btn_create_new.is_displayed():
@@ -292,7 +281,6 @@ def send_mail_app():
         Logging("2.TO =>  FAIL")
         TestCase_LogResult(**data["testcase_result"]["mail_app"]["input_recipient_mail"]["fail"])
     time.sleep(1)
-    
     Logging("------------------------------------------------------CC------------------------------------------------------")
     time.sleep(1)
     try:
@@ -307,37 +295,38 @@ def send_mail_app():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
-    time.sleep(3)
-    #time.sleep(5)
+    time.sleep(4)
     try:
         select_tab_cc = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["tab_cc"])))
         if  select_tab_cc.is_displayed():
             Logging("=> No Crash App") 
             select_tab_cc.click()
-            time.sleep(2)
+            time.sleep(3)
             txt_search_contact_org = WebDriverWait(driver, 50).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["txt_search"])))
             txt_search_contact_org.click()
-            time.sleep(2)
+            time.sleep(3)
             driver.is_keyboard_shown()
-            time.sleep(1)
+            time.sleep(2)
             #driver.press_keycode(29)
             #time.sleep(2)
             #driver.press_keycode(49)
             #time.sleep(2)
             driver.press_keycode(48)
-            time.sleep(2)
+            time.sleep(3)
             driver.press_keycode(43)
-            time.sleep(2)
+            time.sleep(3)
             driver.press_keycode(41)
             time.sleep(2)
             driver.press_keycode(29)
-            time.sleep(1)
+            time.sleep(2)
             driver.press_keycode(48)
-            time.sleep(1)
+            time.sleep(2)
             driver.press_keycode(37)
-            time.sleep(1)
-            #driver.press_keycode(43)
-            #driver.press_keycode(41)
+            time.sleep(2)
+            driver.press_keycode(43)
+            time.sleep(2)
+            driver.press_keycode(42)
+            time.sleep(2)
             #driver.press_keycode(48)
             #driver.press_keycode(33)
             #driver.press_keycode(47)
@@ -393,7 +382,7 @@ def send_mail_app():
     #select_tab_cc = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["tab_bcc"])))
     #select_tab_cc.click()
     #Logging("4. Click Tab Cc successfully")
-    time.sleep(1)
+    time.sleep(2)
     try:
         select_tab_cc = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["tab_bcc"])))
         if  select_tab_cc.is_displayed():
@@ -410,7 +399,7 @@ def send_mail_app():
             #driver.press_keycode(49)
             #time.sleep(2)
             driver.press_keycode(48)
-            time.sleep(2)
+            time.sleep(3)
             driver.press_keycode(43)
             time.sleep(2)
             driver.press_keycode(41)
@@ -442,7 +431,6 @@ def send_mail_app():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
-
     time.sleep(2)
     icon_check_confirm = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_confirm_select_user"])))
     icon_check_confirm.click()
@@ -457,8 +445,7 @@ def send_mail_app():
     subject_email = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, data["send_mail"]["txt_title_mail_app"])))
     subject_email.send_keys(mail_title)
     Logging("9. Input Title Mail App successfully")
-    time.sleep(3)
-
+    time.sleep(1)
     Logging("------------------------------------------------------Input Content------------------------------------------------------")
     #editor_frame = driver.find_element_by_class_name("android.widget.RelativeLayout")
     txt_content = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["txt_xpath_content"])))
@@ -484,12 +471,11 @@ def send_mail_app():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
-    #time.sleep(2)
     try:
-        click_folder_screeshots = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["folder_screenshots"])))
-        if  click_folder_screeshots.is_displayed():
+        click_folder_download = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["folder_dowload"])))
+        if  click_folder_download.is_displayed():
             Logging("=> No Crash App") 
-            click_folder_screeshots.click()
+            click_folder_download.click()
             time.sleep(2)
             Logging("12. Check folder Screenshotsuccessfully")
         else:
@@ -498,7 +484,6 @@ def send_mail_app():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
-    #time.sleep(2)
     
     try:
         select_file_attach = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, data["send_mail"]["select_image_mail_app"])))
@@ -517,6 +502,7 @@ def send_mail_app():
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
     time.sleep(2)
+    
     try:
         click_icon_confirm_attachfile= WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, data["send_mail"]["icon_confirm_attach_file"])))
         if  click_icon_confirm_attachfile.is_displayed():
@@ -564,8 +550,26 @@ def send_mail_app():
         TestCase_LogResult(**data["testcase_result"]["mail_app"]["attach_file_mail"]["fail"])
     icon_send_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_send_mail_app"])))
     icon_send_mail.click()
-    time.sleep(3)
+    time.sleep(2)
     Logging("15. Check icon Send mail  successfully")
+    time.sleep(20)
+   
+    #driver.swipe(start_x=0, start_y = 0, end_x = 0, end_y = 1000, duration=800)
+
+
+    
+    
+    try:
+        driver.swipe(start_x=0, start_y = 0, end_x = 0, end_y = 1000, duration=800)
+        push_mail_app = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["check_push_mail_app"])))
+        push_mail_app.click()
+        Logging("Show push")
+    except WebDriverException:
+        Logging("Not show push")
+    time.sleep(2)
+    driver.swipe(start_x=0, start_y = 1000, end_x = 0, end_y = 0, duration=800)
+
+
     time.sleep(2)
     try:
         click_icon_list_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_list_mail"])))
@@ -665,7 +669,7 @@ def send_mail_app():
     Logging("------------------------------------------------------Download file------------------------------------------------------")
     click_icon_download_file = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_download_file"])))
     click_icon_download_file.click()
-    time.sleep(3)
+    time.sleep(5)
     if 'Save albums success' in driver.page_source :
         Logging("=> Download file => PASS")
         TestCase_LogResult(**data["testcase_result"]["mail_app"]["download_file"]["pass"])
@@ -676,7 +680,6 @@ def send_mail_app():
     click_icon_ok_download_file = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["btn_ok_download_file"])))
     click_icon_ok_download_file.click()
     time.sleep(1)
-
     Logging("------------------------------------------------------Share file from MailApp------------------------------------------------------")
 
     try:
@@ -719,8 +722,6 @@ def send_mail_app():
     click_forward_mail.click()
     Logging("1. Click Icon Forward Mail successfully")
     time.sleep(3)
-
-
     try:
         icon_org_cc = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, data["send_mail"]["org_bcc_cc"])))
         if  icon_org_cc.is_displayed():
@@ -734,11 +735,7 @@ def send_mail_app():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
-    
-
     time.sleep(3)
-
-    time.sleep(1)
     txt_search_contact_org = WebDriverWait(driver, 50).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["txt_search"])))
     txt_search_contact_org.click()
     time.sleep(1)
@@ -762,20 +759,11 @@ def send_mail_app():
     select_contact_org.click()
     time.sleep(1)
     Logging("4. Click User in Tab Cc successfully")
-
-
-
     time.sleep(3)
-
-
 
     #icon_org_cc = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, data["send_mail"]["org_bcc_cc"])))
     #icon_org_cc.click()
     #Logging("2. Click Organization  successfully")
-
-
-
-
 
     icon_check_confirm = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_confirm_select_user"])))
     icon_check_confirm.click()
@@ -786,13 +774,11 @@ def send_mail_app():
     time.sleep(2)
     Logging("6. Check icon Send mail  successfully")
     time.sleep(1)
-    
     icon_back_fw_mail = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_back_fw"])))
     icon_back_fw_mail.click()
     time.sleep(1)
     Logging("6. Check icon Send mail  successfully")
     time.sleep(3)
-
     click_icon_list_mail = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_list_mail"])))
     click_icon_list_mail.click()
     time.sleep(2)
@@ -814,16 +800,13 @@ def send_mail_app():
     else:
         ValidateFailResultAndSystem("=> Forward Mail => FAIL")
         TestCase_LogResult(**data["testcase_result"]["mail_app"]["forward_mail"]["fail"])
-    
-    time.sleep(3)
-
+    time.sleep(2)
     Logging("------------------------------------------------------HMail-7 : Mark important------------------------------------------------------")
-    time.sleep(3)
+    #time.sleep(2)
     click_icon_important = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_important"])))
     click_icon_important.click()
-    time.sleep(3)
+    time.sleep(2)
     Logging("1. Click Icon Mark important  successfully")
-    
     Logging("------------------------------------------------------HMail-8 : Mark as Read ------------------------------------------------------")
     click_icon_list_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_list_mail"])))
     click_icon_list_mail.click()
@@ -853,8 +836,6 @@ def send_mail_app():
     #time.sleep(1)
     #Logging("2. Click button Mark as Read  successfully")
     time.sleep(3)
-    
-
     try:
         click_btn_mask_as_read = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["btn_mark_as_read"])))
 
@@ -869,23 +850,17 @@ def send_mail_app():
         time.sleep(1)
     except WebDriverException:
         Logging("3.  Mark as UnRead Fail")
-
-    
     time.sleep(3)
     click_icon_back = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_back_mark_read"])))
     click_icon_back.click()
     time.sleep(1)
     Logging("3. Click Icon Back successfully")
-    time.sleep(3)
-
     Logging("------------------------------------------------------HMail-9 : Mark as UnRead ------------------------------------------------------")
-
     time.sleep(1)
     click_icon_mail_mask_as_read = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["title_mail_mark_as_unread"])))
     click_icon_mail_mask_as_read.click()
     time.sleep(3)
     Logging("1. Click Icon  successfully")
-
     try:
         click_btn_mask_as_read = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["btn_mark_as_read"])))
         click_btn_mask_as_read.click()
@@ -893,26 +868,21 @@ def send_mail_app():
         Logging("2.  Mark as UnRead successfully")
     except WebDriverException:
         Logging("2.  Mark as UnRead Fail")
-
     time.sleep(3)
     click_icon_back = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_back_mark_read"])))
     click_icon_back.click()
     time.sleep(2)
     Logging("3. Click Icon Back successfully")
-
     click_icon_list_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_list_mail"])))
     click_icon_list_mail.click()
     time.sleep(1)
     Logging("4. Click Icon List Mail  successfully")
-    time.sleep(1)
     #total=WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["number_mark_as_unread"])))
     #text_total1 = total.text
     #time.sleep(1)
     #Logging(text_total1)
     #Logging("---  Total after Mark as read : " + text_total1)
     time.sleep(3)
-    
-
     Logging("------------------------------------------------------HMail-16 : Search Mail ------------------------------------------------------")
     time.sleep(2)
     click_folder_inbox_mail_app = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_folder_inbox"])))
@@ -938,7 +908,6 @@ def send_mail_app():
         exit(0)
 
     time.sleep(2)
-      
     #txt_search_mail = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, data["send_mail"]["txt_search_mail"])))
     #txt_search_mail.send_keys(data["send_mail"]["title_mail_search"])
     #Logging("3. Input title mail search successfully ")  
@@ -952,12 +921,9 @@ def send_mail_app():
         TestCase_LogResult(**data["testcase_result"]["mail_app"]["search_mail"]["fail"])
 
     time.sleep(2)
-
-    
     Logging("------------------------------------------------------Reply All Mail------------------------------------------------------")
     time.sleep(1)
     Logging("1. Click Inbox Mail  successfully")
-
     click_title_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_mail_reply"])))
     click_title_mail.click()
     time.sleep(2)
@@ -966,7 +932,6 @@ def send_mail_app():
     click_reply_all_mail.click()
     Logging("2. Click Icon Reply  successfully")
     time.sleep(1)
-    
     try:
         content_email_reply_all = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["txt_content_mail_reply_all"])))
         if  content_email_reply_all.is_displayed():
@@ -983,11 +948,10 @@ def send_mail_app():
     #content_email_reply_all = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["txt_content_mail_reply_all"])))
     #content_email_reply_all.send_keys(data["send_mail"]["content_mail_reply_all"])
     #Logging("3. Input Mail Reply successfully")
-    time.sleep(3)
+    time.sleep(2)
     icon_send_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_send_mail_app"])))
     icon_send_mail.click()
     time.sleep(2)
-    
     icon_back_fw_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_back_fw"])))
     icon_back_fw_mail.click()
     time.sleep(3)
@@ -996,7 +960,6 @@ def send_mail_app():
     click_icon_back_search_mail.click()
     Logging("5. Click icon Back Search successfully ")  
     time.sleep(3)
-    
     click_icon_list_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_list_mail"])))
     click_icon_list_mail.click()
     time.sleep(2)
@@ -1019,7 +982,6 @@ def send_mail_app():
         ValidateFailResultAndSystem("=> REPLY ALL Mail => FAIL")
         TestCase_LogResult(**data["testcase_result"]["mail_app"]["reply_mail"]["fail"])
     time.sleep(1)
-    
     Logging("------------------------------------------------------Report Spam------------------------------------------------------")
     time.sleep(1)
     # Report Spam
@@ -1032,7 +994,6 @@ def send_mail_app():
     click_icon_list_spam_move.click()
     Logging("2. Click Icon List spam/Move successfully")
     time.sleep(3)
-
     try:
         select_spam_mail= WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_report_spam"])))
         if  select_spam_mail.is_displayed():
@@ -1046,16 +1007,14 @@ def send_mail_app():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
-
     #select_spam_mail= WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_report_spam"])))
     #select_spam_mail.click()
     #time.sleep(1)
     #Logging("3. Select Spam mail successfully")
-
-    time.sleep(2)
+    time.sleep(3)
     click_icon_list_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_list_mail"])))
     click_icon_list_mail.click()
-    time.sleep(3)
+    time.sleep(4)
     Logging("4. Click Icon List Mail  successfully")
     click_folder_spam_mail_app = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_folder_spam"])))
     click_folder_spam_mail_app.click()
@@ -1066,10 +1025,9 @@ def send_mail_app():
     else:
         ValidateFailResultAndSystem("=> Report Spam => FAIL")
         TestCase_LogResult(**data["testcase_result"]["mail_app"]["report_mail"]["fail"])
-    time.sleep(2)
+    time.sleep(1)
 
     Logging("------------------------------------------------------Move Mail------------------------------------------------------")
-    time.sleep(1)
     # Delete Mail
     time.sleep(1)
     select_icon_mail_spam = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["title_mail_mark_as_unread"])))
@@ -1084,8 +1042,6 @@ def send_mail_app():
     click_icon_list_spam_move.click()
     Logging("2. Click Icon List spam/Move successfully")
     time.sleep(3)
-    
-
     try:
         select_move_mail= WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_mail_move"])))
         if  select_move_mail.is_displayed():
@@ -1108,9 +1064,6 @@ def send_mail_app():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
-
-    
-
     time.sleep(3)
     if 'Mail App' in driver.page_source :
         Logging("=> Move Mail => FAIL")
@@ -1118,19 +1071,10 @@ def send_mail_app():
     else:
         ValidateFailResultAndSystem("=> Move Mail => PASS")
         TestCase_LogResult(**data["testcase_result"]["mail_app"]["move_mail"]["pass"])
-
     time.sleep(3)
-
-
-
-
-
-
-
     Logging("------------------------------------------------------Reply Mail------------------------------------------------------")
     time.sleep(1)
     # Reply Mail
-    
     click_icon_list_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_list_mail"])))
     click_icon_list_mail.click()
     time.sleep(2)
@@ -1141,14 +1085,12 @@ def send_mail_app():
     time.sleep(3)
     click_icon_search_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_search_mail"])))
     click_icon_search_mail.click()
-
     time.sleep(3)
     Logging("2. Click icon search mail successfully ")    
     txt_search_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, data["send_mail"]["txt_search_mail"])))
     txt_search_mail.send_keys(data["send_mail"]["title_mail_search"])
     Logging("3. Input title mail search successfully ")  
     time.sleep(3)
-
     click_title_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_mail_reply"])))
     click_title_mail.click()
     time.sleep(2)
@@ -1157,7 +1099,6 @@ def send_mail_app():
     click_reply_mail.click()
     Logging("2. Click Icon Reply  successfully")
     time.sleep(1)
-
     try:
         content_email_reply = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["txt_content_mail_reply"])))
         if  content_email_reply.is_displayed():
@@ -1181,16 +1122,13 @@ def send_mail_app():
     time.sleep(2)
     Logging("15. Check icon Send mail  successfully")
     time.sleep(3)
-    
     icon_back_fw_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_back_fw"])))
     icon_back_fw_mail.click()
     time.sleep(3)
     click_icon_back_search_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_back_search_mail"])))
     click_icon_back_search_mail.click()
     Logging("5. Click icon Back Search successfully ")  
-
     time.sleep(3)
-
     click_icon_list_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_list_mail"])))
     click_icon_list_mail.click()
     time.sleep(1)
@@ -1203,7 +1141,6 @@ def send_mail_app():
     time.sleep(3)
     click_folder_inbox_mail_app = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_folder_inbox"])))
     click_folder_inbox_mail_app.click()
-    
     time.sleep(3)
     if 'RE' in driver.page_source :
         Logging("=> REPLY Mail => PASS")
@@ -1211,16 +1148,13 @@ def send_mail_app():
         ValidateFailResultAndSystem("=> REPLY Mail => FAIL")
     time.sleep(3)
 
-   
     Logging("------------------------------------------------------View Mail List in Inbox------------------------------------------------------")
     if 'Mail App' in driver.page_source :
         Logging("=> View Mail content => PASS")
     else:
         Logging("=> View Mail content => FAIL")
     time.sleep(2)
-
     Logging("------------------------------------------------------View Mail List in folder Sent Mail------------------------------------------------------")
-
     time.sleep(1)
     click_icon_list_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_list_mail"])))
     click_icon_list_mail.click()
@@ -1237,7 +1171,6 @@ def send_mail_app():
     
 
     Logging("------------------------------------------------------Delete multiple email------------------------------------------------------")
-   
     time.sleep(1)
     select_mail_delete = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["title_mail_mark_as_unread"])))
     select_mail_delete.click()
@@ -1273,6 +1206,7 @@ def vacation_auto_replies_mail_app():
     Logging("2. Click Settings successfully")
     time.sleep(2)
 
+    '''
     try:
         click_vacation_auto_mail_app = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_vacation_auto_mail_app"])))
         if  click_vacation_auto_mail_app.is_displayed():
@@ -1285,10 +1219,9 @@ def vacation_auto_replies_mail_app():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
-
-    
-    #click_vacation_auto_mail_app = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_vacation_auto_mail_app"])))
-    #click_vacation_auto_mail_app.click()
+    '''
+    click_vacation_auto_mail_app = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_vacation_auto_mail_app"])))
+    click_vacation_auto_mail_app.click()
     #time.sleep(1)
     #Logging("3. Select Vacation Auto Replies successfully")
     time.sleep(3)
@@ -1296,7 +1229,6 @@ def vacation_auto_replies_mail_app():
     turn_on_auto_mail_app.click()
     Logging("4. Turn On Vacation Auto Replies successfully")
     time.sleep(3)
-
     try:
         click_icon_calendar_mail_app = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_icon_calendar"])))
         if  click_icon_calendar_mail_app.is_displayed():
@@ -1313,8 +1245,6 @@ def vacation_auto_replies_mail_app():
     time.sleep(3)
     #click_icon_calendar_mail_app = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_icon_calendar"])))
     #click_icon_calendar_mail_app.click()
-    
-    
     try:
         click_icon_next_month_mail_app = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_next_month_calendar"])))
         if  click_icon_next_month_mail_app.is_displayed():
@@ -1330,7 +1260,6 @@ def vacation_auto_replies_mail_app():
         exit(0)
     
     time.sleep(2)
-
     #click_icon_next_month_mail_app = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_next_month_calendar"])))
     #click_icon_next_month_mail_app.click()
     #Logging("6. Click Icon Next Month successfully")
@@ -1343,7 +1272,6 @@ def vacation_auto_replies_mail_app():
     time.sleep(2) 
     Logging("8. Click button OK successfully")
     time.sleep(2) 
-       
     try:
         txt_input_message = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["txt_message"])))
         if  txt_input_message.is_displayed():
@@ -1356,7 +1284,6 @@ def vacation_auto_replies_mail_app():
     except WebDriverException:
         ValidateFailResultAndSystem("=> Crash App")
         exit(0)
-    
     #txt_input_message = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["txt_message"])))
     #txt_input_message.send_keys(data["send_mail"]["content_message"])
     #Logging("9. Input Mesage successfully")
@@ -1366,12 +1293,10 @@ def vacation_auto_replies_mail_app():
     time.sleep(2) 
     Logging("10. Click button SAVE successfully")
     time.sleep(1) 
-
     click_vacation_auto_mail_app = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_vacation_auto_mail_app"])))
     click_vacation_auto_mail_app.click()
     time.sleep(2)
     Logging("11. Select Vacation Auto Replies successfully")
-
     time.sleep(2)
     if 'Please wait' in driver.page_source :
         Logging("=> Vacation Auto Replies => PASS")
@@ -1393,9 +1318,6 @@ def vacation_auto_replies_mail_app():
     Logging("13. Click button SAVE successfully")
     time.sleep(2) 
     
-
-
-
 def auto_sort_mail_app():
     
     Logging("------------------------------------------------------Auto-Sort------------------------------------------------------")
@@ -1464,46 +1386,39 @@ def auto_sort_mail_app():
     time.sleep(1)
     driver.back()
     driver.back()
-    
     time.sleep(3)
     
 
-
-
-    '''
-    Logging("------------------------------------------------------Delete Mail in Inbox------------------------------------------------------")
     
+    Logging("------------------------------------------------------Delete Mail in Receipts------------------------------------------------------")
     time.sleep(1)
     click_icon_list_mail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["icon_list_mail"])))  
     click_icon_list_mail.click()
     time.sleep(2)
     driver.swipe(start_x=404, start_y=778, end_x=404, end_y=1400, duration=800)
     time.sleep(1)
-    click_folder_inbox_mail_app = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_folder_inbox"])))
+    click_folder_inbox_mail_app = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_folder_receipts"])))
     click_folder_inbox_mail_app.click()
     time.sleep(1)
     Logging("1. Click Inbox successfully")
-    
     time.sleep(1)
-    select_mail3_delete = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["mail3_delete"])))
+    select_mail3_delete = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_mail1_delete"])))
     select_mail3_delete.click()
-    select_mail_delete = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["title_mail_mark_as_unread"])))
+    select_mail_delete = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_mail2_delete"])))
     select_mail_delete.click()
-    select_mail2_delete = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["mail2_delete"])))
+    select_mail2_delete = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_mail3_delete"])))
     select_mail2_delete.click()
     
-    
-    Logging("1. Select multiple email  successfully")
+    Logging("2. Select multiple email  successfully")
     click_icon_delete_mail= WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, data["send_mail"]["select_icon_delete"])))
     click_icon_delete_mail.click()
     time.sleep(1)
-    Logging("2. Click Icon Delete mail successfully")
-    time.sleep(1)
-    '''
-    
+    Logging("3. Click Icon Delete mail successfully")
     time.sleep(1)
     
-
+   
+    
+    
 
 
 
