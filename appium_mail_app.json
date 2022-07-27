@@ -1,0 +1,421 @@
+{
+    "login_page": "groupware57.hanbiro.net",
+    "domain_input":"//*[@text='Domain']",
+    "txt_id":"//*[@text='ID']",
+    "input_user_user":"automationtest1",
+    "txt_pw":"//*[@text='Password']",
+    "input_pw":"automationtest1!",
+    "btn_log_in":"//*[contains(@text,'Login')]",
+
+        "send_mail":{
+            "icon_write_mail":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]",
+            "org_bcc_cc":"android.widget.TextView",
+            "avatar_user":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView[2]",
+            "check_en_crash_app":"//*[@text='Inbox']",
+
+            "tab_cc":"//*[@text='Cc']",
+            "tab_bcc":"//*[@text='Bcc']",
+            "txt_search":"//*[@text='Search']",
+            "user_search":"automationtest",
+            "select_user_cc_auto1":"//*[contains(@text,'AutomationTest1')]",
+            "select_user_cc_auto2":"//*[contains(@text,'AutomationTest2')]",
+            "pull_the_scroll_bar":"//*[@text='Selenium']",
+            "dept_selenium":"//*[@text='Selenium']",
+            "select_user_auto":"//*[contains(@text,'AutomationTest1')]",
+            "select_user_auto2":"//*[contains(@text,'AutomationTest2')]",
+            "icon_confirm_select_user":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.TextView",
+            "icon_view_mail_cc":"com.hanbiro.mailapp:id/bt_arrow_to",
+            "txt_title_mail_app":"com.hanbiro.mailapp:id/ed_title",
+            "icon_send_mail_app":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[4]/android.widget.TextView",
+            "icon_attach_file":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView",
+            "folder_choose_photo":"//*[@text='Choose Photo']",
+            "folder_screenshots":"//*[@text='Screenshots']",
+            "select_image_mail_app":"com.hanbiro.mailapp:id/imageViewFromMediaChooserGridItemRowView",
+            "select_image2_mail_app":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.ImageView",
+            "icon_confirm_attach_file":"com.hanbiro.mailapp:id/mnu_save",
+            "vitri_to":"com.hanbiro.mailapp:id/vg_to_field",
+            "image_attache_comfirm":"com.hanbiro.mailapp:id/imv_preview",
+            "image_attache_icon_delete":"com.hanbiro.mailapp:id/imv_delete",
+            "label_title":"//*[@text='Subject']",
+            "loading_dialog": "//div[@class='loading-dialog hide']",
+            "select_mail_reply":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView[4]",
+            "click_icon_reply_all":"//*[@text='Reply All']",
+            "content_mail_reply_all":"REPLY All MAIL",
+            "click_icon_reply":"//*[@text='Reply']",
+            "show_global3":"//*[@text='global3.hanbiro.com']",
+            "list_data_dept":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView[2]",
+            "txt_content_mail_reply_all":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.webkit.WebView/android.webkit.WebView/android.view.View/android.widget.EditText",
+            "txt_content_mail_reply":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.webkit.WebView/android.webkit.WebView/android.view.View/android.widget.EditText",
+            "content_mail_reply":"REPLY MAIL",
+            "select_folder_secret":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView",
+            "icon_list_mail":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView",
+            "select_folder_inbox":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]",
+            "click_change_langue":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.TextView[2]",
+            "select_langue_eng":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.TextView",
+            "select_title_mail_view":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView[4]",
+            "count_mail_inbox":"//*[contains(@class,'android.widget.ScrollView')]/android.view.ViewGroup/android.view.ViewGroup",
+            "view_detail_mail":"//android.view.View[@content-desc='View details']",
+            "view_image":"//*[contains(@class,'android.widget.ListView')]/android.view.View",
+            "icon_back_view_image":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ImageView",
+            "show_image":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ImageView",
+            "click_icon_forward":"//*[@text='Forward']",
+            "icon_back_fw":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ImageView",
+            "icon_important":"//*[contains(@class,'android.widget.ScrollView')]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView",
+            "number_mark_as_unread":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.TextView",
+            "title_mail_mark_as_unread":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup",
+            "btn_mark_as_read":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView",
+            "icon_back_mark_read":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ImageView",
+            "title_mail_mark_as_readreafgh":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup",
+            "icon_search_mail":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.TextView",
+            "txt_search_mail":"android.widget.EditText",
+            "txt_id_content":"editor",
+            "txt_xpath_content":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.webkit.WebView/android.webkit.WebView/android.view.View/android.widget.EditText",
+            "title_mail_search":"FW",
+            "content_mail":"Luu Luu",
+            "icon_back_search_mail":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView",
+            "icon_list_spam_move_cancel":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[4]/android.widget.TextView",
+            "select_report_spam":"//*[@text='Report Spam']",
+            "select_mail_move":"//*[@text='Move']",
+            "select_folder_spam":"//*[@text='Spam']",
+            "select_folder_draft":"//*[@text='Drafts']",
+            "btn_done_move_draft":"//*[@text='Done']",
+            "select_report_sent_mail":"//*[@text='Sent Mail']",
+            "select_icon_delete":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.TextView",
+            "mail2_delete":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup",
+            "mail3_delete":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup",
+            "mail4_delete":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup",
+            "select_folder_setting":"//*[@text='Settings']",
+            "select_vacation_auto_mail_app":"//*[@text='Vacation Auto-Replies']",
+            "turn_on_vacation_auto_mail_app":"android.widget.Switch",
+            "turn_off_vacation_auto_mail_app":"android.widget.Switch",
+            "select_icon_calendar":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.ImageView",
+            "icon_next_month_calendar":"//android.widget.ImageButton[@content-desc='Next month']",
+            "select_date_vacation_auto_mail_app":"//*[@text='2']",
+            "select_date_vacation_btn_ok":"//*[@text='OK']",
+            "txt_message":"//*[@text='Please enter the content.']",
+            "content_message":"Please wait",
+            "btn_save_vacation_auto_replies":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView",
+            "select_auto_sort_mail_app":"//*[@text='Auto-Sort']",
+            "icon_plus_add_auto_sort":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView",
+            "txt_from":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.EditText",
+            "email_from":"automationtest1@qa.hanbiro.net",
+            "txt_to":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText",
+            "email_to":"automationtest2@qa.hanbiro.net",
+            "txt_subject_add_auto_sort":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.EditText",
+            "subject_auto_sort":"QA Team Test",
+            "btn_save_auto_sort":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView",
+            "icon_edit_auto_sort":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView",
+            "icon_delete_auto_sort":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup",
+            "auto_sort_btn_done":"//*[@text='Done']",
+            "icon_download_file":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.widget.TextView",
+            "btn_ok_download_file":"//*[@text='OK']",
+            "icon_share_file_from_mailapp":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView",
+            "click_home":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView",
+            "select_title_mail_move":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup",
+            "select_value_move":"//*[@text='Move']",
+            "select_folder_drafts":"//*[@text='Drafts']",
+            "btn_ok_move":"//*[@text='Done']",
+            "select_folder_draft_view":"//*[@text='Drafts']",
+            "select_list_move":"//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[4]/android.widget.TextView",
+            "icon_save_reply":"1111"
+            
+
+
+
+
+
+        },
+        "testcase_result":{
+            "mail_app":{
+                "log_in_mail_app":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Log In Mail App",
+                        "status":"Pass",
+                        "description":"Log In Mail App successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Log In Mail App",
+                        "status":"Fail",
+                        "description":"Log In Mail App Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "input_recipient_mail":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Input recipient ",
+                        "status":"Pass",
+                        "description":"Input recipient successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Input recipient",
+                        "status":"Fail",
+                        "description":"Input recipient Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "attach_file_mail":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Attach File ",
+                        "status":"Pass",
+                        "description":"Attach File successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Attach File",
+                        "status":"Fail",
+                        "description":"Attach File Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "send_mail":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Send Mail ",
+                        "status":"Pass",
+                        "description":"Send Mail successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Send Mail",
+                        "status":"Fail",
+                        "description":"Send Mail Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "view_mail_detail":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"View Mail details ",
+                        "status":"Pass",
+                        "description":"Send Mail successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"View Mail details",
+                        "status":"Fail",
+                        "description":"Send Mail Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "view_mail_content":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"View Mail content",
+                        "status":"Pass",
+                        "description":"View Mail content successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"View Mail content",
+                        "status":"Fail",
+                        "description":"View Mail content Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "view_attach_file":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"View Attach file",
+                        "status":"Pass",
+                        "description":"View Attach file successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"View Attach file",
+                        "status":"Fail",
+                        "description":"View Attach file Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "download_file":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Download file",
+                        "status":"Pass",
+                        "description":"Download file successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Download file",
+                        "status":"Fail",
+                        "description":"Download file Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "share_file":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Share file",
+                        "status":"Pass",
+                        "description":"Share file successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Share file",
+                        "status":"Fail",
+                        "description":"Share file Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "forward_mail":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Forward Mail",
+                        "status":"Pass",
+                        "description":"Forward Mail successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Forward Mail",
+                        "status":"Fail",
+                        "description":"Forward Mail Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "search_mail":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Search Mail",
+                        "status":"Pass",
+                        "description":"Search Mail successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Search Mail",
+                        "status":"Fail",
+                        "description":"Search Mail Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "reply_mail":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"REPLY ALL Mail",
+                        "status":"Pass",
+                        "description":"REPLY ALL Mail successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"REPLY ALL Mail",
+                        "status":"Fail",
+                        "description":"REPLY ALL Mail Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "report_mail":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Report Spam Mail",
+                        "status":"Pass",
+                        "description":"Report Spam successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Report Spam",
+                        "status":"Fail",
+                        "description":"Report Spam Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "move_mail":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Move Mail",
+                        "status":"Pass",
+                        "description":"Move Mail successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Move Mail",
+                        "status":"Fail",
+                        "description":"Move Mail Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "vacation_auto_replies":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Vacation Auto Replies",
+                        "status":"Pass",
+                        "description":"Vacation Auto Replies successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Vacation Auto Replies",
+                        "status":"Fail",
+                        "description":"Vacation Auto Replies Fail",
+                        "tester":"Luu"
+                    }
+                },
+                "auto-sort":{
+                    "pass":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Add Auto-Sort",
+                        "status":"Pass",
+                        "description":"Add Auto-Sort successfully",
+                        "tester":"Luu"
+                    },
+                    "fail":{
+                        "menu":"Mail",
+                        "sub_menu":"Main Features",
+                        "testcase":"Add Auto-Sort",
+                        "status":"Fail",
+                        "description":"Add Auto-Sort Fail",
+                        "tester":"Luu"
+                    }
+                }
+            }
+        }
+
+}
